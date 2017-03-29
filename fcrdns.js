@@ -1,8 +1,10 @@
+// Forward-confirmed reverse DNS by Joshua Davison. MIT Licence.
+
 const net = require('net'),
       dns = require('dns'),
       EventEmitter = require('events').EventEmitter
 
-module.exports = class FCrDNS extends EventEmitter { // Forward-confirmed reverse DNS
+module.exports = class FCrDNS extends EventEmitter {
   constructor() {
     super()
     this.cache = {}
