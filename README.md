@@ -7,12 +7,13 @@ FCrDNS will check the PTR records of an IP address, and will check that there is
 In simpler terms, it checks the hostname of the IP address, and the IP address of the hostname match.
 
 ## Installation
-    npm install --save FCrDNS
+    npm install --save fcrdns
 
 ## Usage:
 Usage is simple, and often best shown in code...
 
-    rDNS = require('FCrDNS');
+    var FCrDNS = require('fcrdns'),
+        rDNS = new FCrDNS();
 
     rDNS.get('8.8.8.8', function(hostname) {
       if (hostname === null)
