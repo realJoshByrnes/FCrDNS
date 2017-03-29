@@ -1,7 +1,7 @@
 {
   "name": "fcrdns",
   "description": "NodeJS Forward-confirmed reverse DNS",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "keywords": [
     "Reverse",
     "IRCd",
