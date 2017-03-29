@@ -11,25 +11,26 @@ In simpler terms, it checks the hostname of the IP address, and the IP address o
 
 ## Usage:
 Usage is simple, and often best shown in code...
+````javascript
+var FCrDNS = require('fcrdns'),
+    rDNS = new FCrDNS();
 
-    var FCrDNS = require('fcrdns'),
-        rDNS = new FCrDNS();
-
-    rDNS.get('8.8.8.8', function(hostname) {
-      if (hostname === null)
-        console.log('Unable to verify Google DNS hostname.');
-      else
-        console.log('The hostname for Google DNS is ' + hostname);
-    });
+rDNS.get('8.8.8.8', function(hostname) {
+  if (hostname === null)
+    console.log('Unable to verify Google DNS hostname.');
+  else
+    console.log('The hostname for Google DNS is ' + hostname);
+});
+````
 
 ### FCrDNS(config)
 * `config` &lt;object&gt; (not yet implemented)
- * `ttl` &lt;number&gt;
+  * `ttl` &lt;number&gt;
 
 ### FCrDNS.get(address, callback)
 * `address` &lt;string&gt;
 * `callback` &lt;Function&gt;
- * `hostname` &lt;string&gt;
- * `cached` &lt;Boolean&gt;
+  * `hostname` &lt;string&gt;
+  * `cached` &lt;Boolean&gt;
 
 Note that `hostname` will be `null` if verification failed, or if there was an error.
