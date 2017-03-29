@@ -1,0 +1,32 @@
+{
+  "name": "FCrDNS",
+  "description": "NodeJS Forward-confirmed reverse DNS",
+  "version": "1.0",
+  "keywords": [
+    "DNS",
+    "rDNS",
+    "FCrDNS",
+    "IRC",
+    "Mail"
+  ],
+  "maintainers": [
+    {
+      "name": "Joshua Davison",
+      "email": "joshua@davison.asia",
+      "web": "http://jd.davison.asia/"
+    }
+  ],
+  "main": "fcrdns.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ozjd/FCrDNS"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://www.opensource.org/licenses/mit-license.php"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/ozjd/FCrDNS/issues"
+  }
+}
